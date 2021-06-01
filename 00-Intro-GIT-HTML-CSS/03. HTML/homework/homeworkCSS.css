@@ -2,10 +2,10 @@ h1 { color: #54A271; }
 
 img { width: 400px; }
 
-#thirdDiv 
+div#thirdDiv 
 	{ 
-		height: 600; 
-		width: 500; 
+		height: 600px; 
+		width: 500px; 
 		background-color: lightgray; 
 		padding: 50px;
 		border: solid black;
