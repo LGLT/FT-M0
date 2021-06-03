@@ -37,6 +37,7 @@ function suma(x, y) {
   // Tu código:
   var sumaxy = x + y;
   return sumaxy;
+  //return x + y (también es solución)
 }
 
 function resta(x, y) {
@@ -45,6 +46,7 @@ function resta(x, y) {
   
   var restaxy = x - y;
   return restaxy;
+  //return x - y (también es solución)
 }
 
 function multiplica(x, y) {
@@ -52,6 +54,7 @@ function multiplica(x, y) {
   // Tu código:
   var multxy = x * y;
   return multxy;
+  //return x * y (también es solución)
 }
 
 function divide(x, y) {
@@ -59,6 +62,7 @@ function divide(x, y) {
   // Tu código:
   var divxy = x / y;
   return divxy;
+  //return x / y (también es solución)
 }
 
 function sonIguales(x, y) {
@@ -106,6 +110,7 @@ function obtenerResto(x, y) {
   // Tu código:
   var cocientexy = x % y;
   return cocientexy;
+  //return x % y (también es solución)
 }
 
 function esPar(num) {
@@ -134,6 +139,8 @@ function elevarAlCuadrado(num) {
   // Tu código:
   var alcuadrado = Math.pow(num,2);
   return alcuadrado;
+  //return Math.pow(num,2) (también es solución)
+  // return num ** 2 (también es solución)
 }
 
 function elevarAlCubo(num) {
@@ -141,6 +148,8 @@ function elevarAlCubo(num) {
   // Tu código:
   var alcubo = Math.pow(num,3);
   return alcubo;
+  //return Math.pow(num,3) (también es solución)
+  // return num ** 3 (también es solución)
 }
 
 function elevar(num, exponent) {
@@ -148,6 +157,7 @@ function elevar(num, exponent) {
   // Tu código:
   var alexponente = Math.pow(num,exponent);
   return alexponente;
+  // return num ** exponent (también es solución)
 }
 
 function redondearNumero(num) {
@@ -179,10 +189,12 @@ function esPositivo(numero) {
   if(numero > 0){
     var numpositivo = 'Es positivo';
     return numpositivo;
+    // return 'Es positivo'
   }
   else if (numero < 0) {
     var numnegativo = 'Es negativo';
     return numnegativo;
+    return 'Es negativo'
   }
   return false;
 }
@@ -193,6 +205,7 @@ function agregarSimboloExclamacion(str) {
   // Tu código:
   var strexclamacion = str + '!';
   return strexclamacion;
+  //return str + '!'
 }
 
 function combinarNombres(nombre, apellido) {
@@ -201,6 +214,7 @@ function combinarNombres(nombre, apellido) {
   // Tu código:
   var nombreapellido = nombre + ' ' + apellido;
   return nombreapellido;
+  //return nombre + ' ' + apellido
 }
 
 function obtenerSaludo(nombre) {
@@ -216,6 +230,7 @@ function obtenerAreaRectangulo(alto, ancho) {
   // Tu código:
   var arearectangulo = alto * ancho;
   return arearectangulo;
+  //return alto * ancho
 }
 
 
