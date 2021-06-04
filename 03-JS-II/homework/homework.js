@@ -5,6 +5,13 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+
+  /*
+  if(x > y){
+    return x;
+  } return y;
+  */
+
   if(x > y){
     return x;
   } else if (x < y) {
@@ -27,6 +34,12 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+
+/*
+  if (status===1) return 'Online';
+  ...
+*/
+
   if (status === 1){
     return 'Online';
   } else if (status  === 2) {
@@ -82,6 +95,9 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  //return numero===10 || return===5 (se retorna true si se cumplen)
+
   if (numero===10 || numero===5){
     return true;
   } return false;
@@ -91,6 +107,9 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  //return numero < 50 && numero > 20
+
   if(numero < 50 && numero > 20){
     return true;
   } return false; 
@@ -104,6 +123,10 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
+// return Number.isInteger(numero);
+// return Math.floor(numero) === numero;
+
   if (numero%1===0){
     return true;
   } return false;
@@ -148,6 +171,12 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+
+/* if (numero<2) return false;
+
+*/
+
+
   if(numero===0 || numero===1 || numero===2){
     return false;
   }
@@ -155,10 +184,11 @@ function esPrimo(numero) {
     if(numero%i===0){
     return false;
     }
-  } 
+  }
   if(numero%numero===0){
       return true;
     }
+  //return true;
 }
 
 function esVerdadero(valor){
@@ -191,6 +221,14 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+
+/*
+  var NumAString = numero.toString();
+  if(NumAString.lenght === 3)...
+
+  //En caso de ser negativo, transformarlo a valor absoluto.
+*/
+
   if(numero>99 && numero<1000){
     return true;
   } return false;
@@ -202,6 +240,7 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   do{
+//  numero += 5;
     numero=numero+5;
     i++;
   }while(i<=7)
